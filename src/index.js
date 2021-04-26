@@ -6,12 +6,15 @@ import reportWebVitals from './reportWebVitals';
 import './global.css'
 import './main.css'
 import './mobile.css'
+import './Home.css'
 import HomePage from "./pages/HomePage"
 import Xpage from "./pages/Xpage"
+import Tutorial1 from "./pages/Tutorial1"
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <Tutorial1 />
+    <Home />
   </React.StrictMode>,
   document.getElementById('root')
 );
