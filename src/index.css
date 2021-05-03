@@ -35,3 +35,18 @@ background-color: rgba(28, 167, 46, 0.336);
 margin-bottom: 10px;
 padding-left: 20px;
 }
+.SearchBar{
+  display: flex;
+  justify-content:baseline;
+  font-size: 45px;
+  background-color:blueviolet;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+.input{
+  display: flex;
+  justify-content:baseline;
+  font-size: 11px;
+  background-color:white;
+  color: black;
+}

@@ -1,22 +1,22 @@
-// import {useState} from "react"
+import { useState } from "react";
 
-// const SearchBar = ()=>{
+const SearchBar = ({search}) => {
+  const [searchedvalue, setsearchedvalue] = useState("");
 
-//     const [searchedvalue, setsearchedvalue]=useState("")
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    search(searchedvalue)
+  };
 
-//     conts handlesubmit = ()=>{
-// e.preventDefault();
+  
 
-//     }
-//     return(
-//         <form onSubmit={handlesubmit}>
-//             {searchedvalue}
-//      <input type="text" onChange={e=>setsearchedvalue(e.target.value)}/>
+  return (
+    <form onSubmit={handleSubmit} className="SearchBar">
+      <input type="text" onChange={(e) => setsearchedvalue(e.target.value)} className="input"/>
 
-//      <button type= "submit">Submit et</button>       
-//         </form>
-//     )
+      <button type="submit">Submit et</button>
+    </form>
+  );
+};
 
-// }
-
-// export default SearchBar
+export default SearchBar;

@@ -1,11 +1,24 @@
-export const Child=(props)=>{
-    console.log(props)
+export const Child = (props) =>{
+    console.log(props);
+    props.fnc()
+    props.fnc2(5)
+    props.fnc3("example3childdan gelsin")
+
     return(
-        <div className="child">
-            <p>{props.product.title}</p>
-            
-            <p>{props.product.price}</p>
-            <img src={props.product.img} width="150" height="200" alt=""/>
+        <div>
+            hello from Child {props.name}
+            <div>
+            {
+                props.data.map((person, index)=>{
+                    return(
+                        <p key={index}>
+                            {person}
+                        </p>
+                    )
+                })
+            }
         </div>
+        </div>
+        
     )
 }
