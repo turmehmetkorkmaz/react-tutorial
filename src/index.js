@@ -10,11 +10,12 @@ import './mobile.css'
 import HomePage from "./pages/HomePage"
 import Xpage from "./pages/Xpage"
 import HomePage4 from './pages/HomePage4';
+import Home2 from './components/Home2';
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <HomePage4 />
+    <Home2 />
   </React.StrictMode>,
   document.getElementById('root')
 );
